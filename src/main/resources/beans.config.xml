@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.example.entities.Country" id="ie">
+        <property name="name" value="Ireland"/>
+        <property name="capitalCity" value="Dublin"/>
+        <property name="populationInMillions" value="5.033"/>
+    </bean>
+    <bean class="org.example.entities.Country" id="es">
+        <constructor-arg value="Spain"/>
+        <constructor-arg value="Barcelona"/>
+        <constructor-arg value="47.42"/>
+    </bean>
+    <bean class="org.example.entities.Country" id="fr">
+        <property name="name" value="France"/>
+        <property name="capitalCity" value="Paris"/>
+        <property name="populationInMillions" value="67.75"/>
+    </bean>
+    <bean class="org.example.entities.Country" id="ni">
+        <constructor-arg value="Nigeria"/>
+        <constructor-arg value="Lagos"/>
+        <constructor-arg value="213.4"/>
+    </bean>
+    <bean class="org.example.entities.Country" id="eg">
+        <property name="name" value="Eqypt"/>
+        <property name="capitalCity" value="Cairo"/>
+        <property name="populationInMillions" value="109.3"/>
+    </bean>
+</beans>
