@@ -8,21 +8,17 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
 
+        System.setProperty("spring.profiles.active", "eu,af,sa");
+
         // Beans created using XML
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.config.xml");
-        Country ireland = (Country) applicationContext.getBean("ie");
-        Country spain = (Country) applicationContext.getBean("es");
-        Country france = (Country) applicationContext.getBean("fr");
-        Country nigeria = (Country) applicationContext.getBean("ni");
-        Country egypt = (Country) applicationContext.getBean("eg");
-        System.out.println(ireland);
-        System.out.println(spain);
-        System.out.println(france);
-        System.out.println(nigeria);
-        System.out.println(egypt);
+        System.out.println("XML Beans\n===========");
+        applicationContext.getBeansOfType(Country.class)
+                .forEach((key, value) -> System.out.println(key + ": " + value));
 
         // Beans created using Java
         ApplicationContext applicationContext1 = new AnnotationConfigApplicationContext(Beans.class);
+        System.out.println("\nJava Beans\n===========");
         applicationContext1.getBeansOfType(Country.class)
                 .forEach((key, value) -> System.out.println(key + ": " + value));
     }

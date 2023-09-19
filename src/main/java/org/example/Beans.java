@@ -3,7 +3,9 @@ package org.example;
 import org.example.entities.Continent;
 import org.example.entities.Country;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Profile;
 
+@Profile("sa")
 public class Beans {
 
     @Bean
