@@ -7,9 +7,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Country {
+public class Continent {
     private String name;
-    private String capitalCity;
-    private Double populationInMillions;
-    private Continent continent;
 }

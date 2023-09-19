@@ -7,25 +7,39 @@
         <property name="name" value="Ireland"/>
         <property name="capitalCity" value="Dublin"/>
         <property name="populationInMillions" value="5.033"/>
+        <property name="continent" ref="eu"/>
     </bean>
     <bean class="org.example.entities.Country" id="es">
         <constructor-arg value="Spain"/>
         <constructor-arg value="Barcelona"/>
         <constructor-arg value="47.42"/>
+        <constructor-arg ref="eu"/>
     </bean>
     <bean class="org.example.entities.Country" id="fr">
         <property name="name" value="France"/>
         <property name="capitalCity" value="Paris"/>
         <property name="populationInMillions" value="67.75"/>
+        <property name="continent" ref="eu"/>
     </bean>
     <bean class="org.example.entities.Country" id="ni">
         <constructor-arg value="Nigeria"/>
         <constructor-arg value="Lagos"/>
         <constructor-arg value="213.4"/>
+        <constructor-arg ref="af"/>
     </bean>
     <bean class="org.example.entities.Country" id="eg">
         <property name="name" value="Eqypt"/>
         <property name="capitalCity" value="Cairo"/>
         <property name="populationInMillions" value="109.3"/>
+        <property name="continent" ref="af"/>
     </bean>
+
+    <bean class="org.example.entities.Continent" id="eu">
+        <property name="name" value="Europe"/>
+    </bean>
+    <bean class="org.example.entities.Continent" id="af">
+        <constructor-arg value="Africa"/>
+    </bean>
+
+
 </beans>

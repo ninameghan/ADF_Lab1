@@ -22,12 +22,12 @@ public class Main {
         System.out.println(egypt);
 
         // Beans created using Java
-        ApplicationContext applicationContext1 = new AnnotationConfigApplicationContext(Beans.class);
-        Country brazil = (Country) applicationContext1.getBean("br");
-        Country peru = (Country) applicationContext1.getBean("pe");
-        Country venezuela = (Country) applicationContext1.getBean("ve");
-        System.out.println(brazil);
-        System.out.println(peru);
-        System.out.println(venezuela);
+//        ApplicationContext applicationContext1 = new AnnotationConfigApplicationContext(Beans.class);
+//        Country brazil = (Country) applicationContext1.getBean("br");
+//        Country peru = (Country) applicationContext1.getBean("pe");
+//        Country venezuela = (Country) applicationContext1.getBean("ve");
+//        System.out.println(brazil);
+//        System.out.println(peru);
+//        System.out.println(venezuela);
     }
 }
