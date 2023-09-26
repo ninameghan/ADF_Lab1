@@ -3,8 +3,12 @@ package org.example;
 import org.example.entities.Continent;
 import org.example.entities.Country;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
+@Configuration
+@ComponentScan
 @Profile("sa")
 public class Beans {
 
