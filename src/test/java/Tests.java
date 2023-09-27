@@ -1,6 +1,3 @@
-import org.example.Beans;
-import org.example.entities.Continent;
-import org.example.entities.Country;
 import org.example.entities.Planet;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Nested;
